@@ -13,6 +13,10 @@ fi
 # Source default Debian zshrc
 source /etc/zsh/zshrc || 1
 
+# Aliases
+alias fd='find . -type d -name'
+alias ff='find . -type f -name'
+
 # Debian stuff
 export DEBEMAIL=your@email.domain
 export DEBFULLNAME='Your Name'
