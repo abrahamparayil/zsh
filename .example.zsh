@@ -16,3 +16,6 @@ export DEBFULLNAME='Your Name'
 alias lintian='lintian -iIEcv --pedantic --color auto'
 alias git-import-dsc='git-import-dsc --author-is-committer --pristine-tar'
 alias clean='fakeroot debian/rules clean'
+
+# Useful scripts
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
