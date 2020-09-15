@@ -23,3 +23,4 @@ alias clean='fakeroot debian/rules clean'
 # Useful scripts
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/oh-my-zsh/git.plugin.zsh
+source ~/.zsh/oh-my-zsh/alias-finder.plugin.zsh
