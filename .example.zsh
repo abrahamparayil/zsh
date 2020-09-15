@@ -1,6 +1,9 @@
 # set TERM
 export TERM=xterm-256color
 
+# Autoload Completion
+autoload -U +X compinit && compinit
+
 # Set PATH
 if [[ -z "$PATH" || "$PATH" == "/bin:/usr/bin" ]]
 then
