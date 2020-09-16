@@ -30,3 +30,4 @@ source ~/.zsh/oh-my-zsh/git.plugin.zsh
 source ~/.zsh/oh-my-zsh/alias-finder.plugin.zsh
 source ~/.zsh/oh-my-zsh/colored-man-pages.plugin.zsh
 source ~/.zsh/oh-my-zsh/debian.plugin.zsh
+source ~/.zsh/oh-my-zsh/django.plugin.zsh
