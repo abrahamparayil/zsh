@@ -31,3 +31,9 @@ source ~/.zsh/oh-my-zsh/alias-finder.plugin.zsh
 source ~/.zsh/oh-my-zsh/colored-man-pages.plugin.zsh
 source ~/.zsh/oh-my-zsh/debian.plugin.zsh
 source ~/.zsh/oh-my-zsh/django.plugin.zsh
+
+# Theme
+source ~/.zsh/powerlevel10k/powerlevel10k.zsh-theme
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
