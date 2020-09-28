@@ -1,5 +1,13 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # set TERM
 export TERM=xterm-256color
+export GPG_TTY=$(tty)
 
 # Autoload Completion
 autoload -U +X compinit && compinit
@@ -10,6 +18,13 @@ then
 	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
 fi
 
+# Set Histroy file
+HISTFILE=~/.zsh_history
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
+setopt SHARE_HISTORY
+
 # Source default Debian zshrc
 source /etc/zsh/zshrc || 1
 
@@ -18,8 +33,8 @@ alias fd='find . -type d -name'
 alias ff='find . -type f -name'
 
 # Debian stuff
-export DEBEMAIL=your@email.domain
-export DEBFULLNAME='Your Name'
+export DEBEMAIL=avronr@tuta.io
+export DEBFULLNAME='Abraham Raji'
 alias lintian='lintian -iIEcv --pedantic --color auto'
 alias git-import-dsc='git-import-dsc --author-is-committer --pristine-tar'
 alias clean='fakeroot debian/rules clean'
