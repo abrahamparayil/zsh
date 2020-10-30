@@ -28,6 +28,12 @@ setopt SHARE_HISTORY
 # Source default Debian zshrc
 source /etc/zsh/zshrc || 1
 
+# Fuzzy Search
+export FZF_BASE=/usr/bin/fzf
+
+# Case insensitive completion
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+
 # Aliases
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
