@@ -15,7 +15,7 @@ autoload -U +X compinit && compinit
 # Set PATH
 if [[ -z "$PATH" || "$PATH" == "/bin:/usr/bin" ]]
 then
-	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games"
+	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:$HOME/.cargo/bin"
 fi
 
 # Set Histroy file
