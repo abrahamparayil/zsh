@@ -13,10 +13,9 @@ export GPG_TTY=$(tty)
 autoload -U +X compinit && compinit
 
 # Set PATH
-if [[ -z "$PATH" || "$PATH" == "/bin:/usr/bin" ]]
-then
-	export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:$HOME/.cargo/bin"
-fi
+export GOPATH=$HOME/.gopath
+export GOPATH=$GOPATH:$HOME/Code/
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/games:$HOME/.cargo/bin:$HOME/.local/bin:$GOPATH/bin"
 
 # Set Histroy file
 HISTFILE=~/.zsh_history
