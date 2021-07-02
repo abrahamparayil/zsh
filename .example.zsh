@@ -9,6 +9,8 @@ fi
 export TERM=xterm-256color
 export GPG_TTY=$(tty)
 
+export EDITOR=emacsclient -nw
+
 # Autoload Completion
 autoload -U +X compinit && compinit
 
@@ -36,6 +38,8 @@ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 
 # Aliases
 alias fd='find . -type d -name'
 alias ff='find . -type f -name'
+alias ytdl=x'youtube-dl --write-thumbnail --write-sub'
+alias e='emacsclient -nw'
 
 # Debian stuff
 export DEBEMAIL=avronr@tuta.io
@@ -46,6 +50,7 @@ alias clean='fakeroot debian/rules clean'
 
 # Useful scripts
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.zsh/oh-my-zsh/git.plugin.zsh
 source ~/.zsh/oh-my-zsh/alias-finder.plugin.zsh
 source ~/.zsh/oh-my-zsh/colored-man-pages.plugin.zsh
