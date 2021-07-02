@@ -9,7 +9,7 @@ fi
 export TERM=xterm-256color
 export GPG_TTY=$(tty)
 
-export EDITOR=emacsclient -nw
+export EDITOR='emacsclient -nw'
 
 # Autoload Completion
 autoload -U +X compinit && compinit
